@@ -15,10 +15,10 @@ train_datagen = ImageDataGenerator(rescale=1. / 255,
                                    horizontal_flip=True)
 test_datagen = ImageDataGenerator(rescale=1. / 255)
 
-training_set = train_datagen.flow_from_directory('preprocessed dataset/training', target_size=(299, 299), batch_size=32,
+training_set = train_datagen.flow_from_directory('preprocessed dataset/training', target_size=(229, 229), batch_size=32,
                                                  class_mode='categorical')
 
-test_set = test_datagen.flow_from_directory('preprocessed dataset/testing', target_size=(299, 299), batch_size=32,
+test_set = test_datagen.flow_from_directory('preprocessed dataset/testing', target_size=(229, 229), batch_size=32,
                                             class_mode='categorical')
 imageSize = [229, 229]
 
@@ -28,3 +28,18 @@ for layer in xception.layers:
     layer.trainable = False
 
 x = Flatten()(xception.output)
+
+model = Model(inputs=xception.input, outputs=prediction)
+
+model.compile(
+    loss="categorical_crossentropy",
+    optimizer="adam",
+    metrics=['accuracy']
+)
+
+r = model.fit(training_set,
+              validation_data=test_set,
+              epochs=30,
+              steps_per_epoch=len(training_set) // 32,
+              validation_steps=len(test_set) // 32
+              )
