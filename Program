@@ -20,3 +20,11 @@ training_set = train_datagen.flow_from_directory('preprocessed dataset/training'
 
 test_set = test_datagen.flow_from_directory('preprocessed dataset/testing', target_size=(299, 299), batch_size=32,
                                             class_mode='categorical')
+imageSize = [229, 229]
+
+xception = Xception(input_shape=imageSize + [3], weights='imagenet',include_top=False)
+
+for layer in xception.layers:
+    layer.trainable = False
+
+x = Flatten()(xception.output)
