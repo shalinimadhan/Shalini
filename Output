@@ -1,11 +1,74 @@
 C:\Users\ABC\PycharmProjects\desktop\SmartinternProject_shalini\venv\Scripts\python.exe "C:/Users/ABC/PycharmProjects/desktop/SmartinternProject_shalini/Test traansfer model.py"
-2023-12-08 23:48:36.486103: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-11 08:23:58.276957: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 Found 3662 images belonging to 5 classes.
 Found 734 images belonging to 5 classes.
-
-Process finished with exit code 0 
-
-2023-12-09 00:05:30.900331: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+2023-12-11 08:25:15.483842: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/xception/xception_weights_tf_dim_ordering_tf_kernels_notop.h5
-83683744/83683744 ━━━━━━━━━━━━━━━━━━━━ 10s 0us/step
+Epoch 1/30
+C:\Users\ABC\PycharmProjects\desktop\SmartinternProject_shalini\venv\lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+2023-12-11 08:25:49.466465: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:422] ShuffleDatasetV3:2: Filling up shuffle buffer (this may take a while): 2 of 8
+2023-12-11 08:26:01.466755: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:422] ShuffleDatasetV3:2: Filling up shuffle buffer (this may take a while): 5 of 8
+2023-12-11 08:26:17.566614: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:422] ShuffleDatasetV3:2: Filling up shuffle buffer (this may take a while): 7 of 8
+2023-12-11 08:26:23.171824: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:452] Shuffle buffer filled.
+3/3 ━━━━━━━━━━━━━━━━━━━━ 237s 92s/step - accuracy: 0.4332 - loss: 7.1628 - val_accuracy: 0.4114 - val_loss: 13.3058
+Epoch 2/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 113s 55s/step - accuracy: 0.5352 - loss: 10.9326 - val_accuracy: 0.5450 - val_loss: 8.6800
+Epoch 3/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 110s 53s/step - accuracy: 0.5156 - loss: 7.9573 - val_accuracy: 0.5177 - val_loss: 3.3047
+Epoch 4/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 55s/step - accuracy: 0.4674 - loss: 4.1057 - val_accuracy: 0.5913 - val_loss: 5.2088
+Epoch 5/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 110s 53s/step - accuracy: 0.5703 - loss: 5.8871 - val_accuracy: 0.6567 - val_loss: 5.5768
+Epoch 6/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 54s/step - accuracy: 0.6641 - loss: 4.2130 - val_accuracy: 0.6526 - val_loss: 5.1091
+Epoch 7/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 54s/step - accuracy: 0.5938 - loss: 4.6090 - val_accuracy: 0.6894 - val_loss: 2.9595
+Epoch 8/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 115s 56s/step - accuracy: 0.6654 - loss: 3.0561 - val_accuracy: 0.5395 - val_loss: 3.1335
+Epoch 9/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 55s/step - accuracy: 0.5521 - loss: 3.5711 - val_accuracy: 0.6567 - val_loss: 2.5466
+Epoch 10/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 55s/step - accuracy: 0.6146 - loss: 3.1507 - val_accuracy: 0.7166 - val_loss: 3.4705
+Epoch 11/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 54s/step - accuracy: 0.6732 - loss: 4.4797 - val_accuracy: 0.6948 - val_loss: 2.1884
+Epoch 12/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 113s 55s/step - accuracy: 0.7253 - loss: 1.9928 - val_accuracy: 0.6485 - val_loss: 2.2789
+Epoch 13/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 111s 54s/step - accuracy: 0.6602 - loss: 2.7272 - val_accuracy: 0.6962 - val_loss: 2.2123
+Epoch 14/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 111s 54s/step - accuracy: 0.6953 - loss: 2.4122 - val_accuracy: 0.7139 - val_loss: 2.3720
+Epoch 15/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 55s/step - accuracy: 0.7435 - loss: 2.3798 - val_accuracy: 0.6608 - val_loss: 2.8335
+Epoch 16/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 111s 54s/step - accuracy: 0.7174 - loss: 1.8959 - val_accuracy: 0.6812 - val_loss: 1.8849
+Epoch 17/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 113s 55s/step - accuracy: 0.6484 - loss: 1.9887 - val_accuracy: 0.7057 - val_loss: 1.9350
+Epoch 18/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 113s 55s/step - accuracy: 0.6224 - loss: 2.4116 - val_accuracy: 0.6853 - val_loss: 2.1615
+Epoch 19/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 111s 54s/step - accuracy: 0.5820 - loss: 2.5831 - val_accuracy: 0.6526 - val_loss: 2.2689
+Epoch 20/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 119s 58s/step - accuracy: 0.6224 - loss: 3.0541 - val_accuracy: 0.7193 - val_loss: 2.8645
+Epoch 21/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 55s/step - accuracy: 0.7344 - loss: 2.8453 - val_accuracy: 0.6580 - val_loss: 2.3442
+Epoch 22/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 114s 56s/step - accuracy: 0.7031 - loss: 1.9782 - val_accuracy: 0.6281 - val_loss: 2.6802
+Epoch 23/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 120s 58s/step - accuracy: 0.6367 - loss: 2.2930 - val_accuracy: 0.6907 - val_loss: 2.3766
+Epoch 24/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 120s 58s/step - accuracy: 0.7318 - loss: 2.9281 - val_accuracy: 0.7166 - val_loss: 2.1593
+Epoch 25/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 123s 60s/step - accuracy: 0.8294 - loss: 0.9075 - val_accuracy: 0.6431 - val_loss: 2.4306
+Epoch 26/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 121s 59s/step - accuracy: 0.6953 - loss: 2.1660 - val_accuracy: 0.7248 - val_loss: 2.3082
+Epoch 27/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 121s 58s/step - accuracy: 0.7057 - loss: 2.7184 - val_accuracy: 0.6948 - val_loss: 1.7610
+Epoch 28/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 113s 55s/step - accuracy: 0.6875 - loss: 1.8549 - val_accuracy: 0.7112 - val_loss: 1.7080
+Epoch 29/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 112s 54s/step - accuracy: 0.6341 - loss: 2.4740 - val_accuracy: 0.7262 - val_loss: 1.4576
+Epoch 30/30
+3/3 ━━━━━━━━━━━━━━━━━━━━ 115s 56s/step - accuracy: 0.6771 - loss: 1.9903 - val_accuracy: 0.6281 - val_loss: 2.3148
+
+Process finished with exit code 0
